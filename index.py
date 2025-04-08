@@ -20,7 +20,6 @@ total_ratings_text = driver.find_element(By.XPATH, '//*[@id="module_product_revi
 total_ratings = int(total_ratings_text.split()[0]) 
 total_page = math.ceil(total_ratings / 5)
 print(total_page,'total pages')
-print(math.ceil(0 / 5)) 
 comments = []
 for i in range(1, total_page + 1):
     elements = driver.find_elements(By.CSS_SELECTOR, '.item-content .content')
